@@ -1,0 +1,661 @@
+@import vars
+@import keyflames
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,800&display=swap')
+body
+    
+    margin: 0 auto
+    font-family: 'Raleway'
+    overflow-x: hidden
+    max-width: $max-width-site
+	
+.for-button
+    button
+        width: 150px
+        padding: 10px
+        align-self: center
+        background-color: #998675
+        color: white
+        border: 2px solid #998675
+        border-radius: 3px
+        font-size: 12px
+        font-weight: 800
+        box-shadow: 0 2px 0 #736357
+    button:active
+	    -webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+	    animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+    button:focus 
+        outline: 0
+    button:hover
+        opacity: .9
+	    
+
+
+header .carousel-control-prev, .carousel-control-next
+    height: 100px
+    margin: auto 0 auto 0
+.carousel-indicators
+    li
+        width: 12px
+        height: 12px
+        border: 2px
+        border-radius: 10px
+        margin: 10px
+        align-self: center
+    .active
+        background-color: transparent !important
+        border: 2px solid #998675 !important
+
+
+header .carousel-header
+    position: absolute
+    display: flex
+    flex-flow: column
+    text-align: center
+    width: 40%
+    top: 35%
+    left: 30%
+    color: white
+    @extend .for-button
+    h1
+        font-weight: 800
+    h6
+        margin-bottom: 2rem
+
+
+header
+    display: flex
+    justify-content: center   
+    
+    
+    .header
+        position: absolute
+        top: 3%
+        display: flex
+        justify-content: center
+        margin: 10px 20px 10px 20px
+   
+    color: white
+    .logo
+        display: flex
+    .header-logo
+	  
+    img
+	    -webkit-animation: kenburns-top 5s ease-out both
+	    animation: kenburns-top 5s ease-out both
+
+    .header-icon
+        margin: 5px
+        align-self: center
+    .fas
+        margin: 10px
+        color: white
+    .fas:hover
+         color: #c7b299 !important  
+         margin-top: 10% 
+
+
+
+header 
+    .nav-tabs
+        border-color: transparent
+    .active
+        background-color: transparent !important
+        color: #c7b299 !important
+        border-color: transparent !important
+    .nav-link
+        border-color: transparent !important
+    .nav-link:hover
+        color: #c7b299 !important  
+        margin-top: 10% 
+    
+    .nav-item a
+        color: #fff
+        transition: all 1s ease
+    
+
+.capability
+    
+    padding: 3% 15% 3% 15%
+    text-align: center    
+    h1
+        color: #555555
+    h4
+        font-size: 20px
+        font-weight: 700
+    h6
+        font-size: 14px
+    .indicator
+        width: 25%
+        height: 3px
+        background-color: #fbfaf8
+        margin: 15% auto 0 auto
+        
+        
+        
+        
+    .item:hover
+        h1,h4
+            color: #c7b299
+        .indicator   
+            background-color: #c7b299
+.realization
+    
+    padding: 5% 15% 0 15%
+    display: flex
+    flex-flow: column
+    align-items: center
+    background-color: #fbfaf8
+    color: #555555
+    
+    text-align: center
+    h2
+        font-weight: 700
+        margin-bottom: 2%
+    h6
+        margin-bottom: 5%
+    img 
+        
+        z-index: 3
+        transition: all 1s ease
+
+    .img-center
+        display: flex
+        align-items: flex-end
+        justify-content: center
+    
+    .img-left
+        transform: translate(-30%)
+        z-index: 1
+        opacity: .8
+        position: absolute
+    .img-left:hover
+        z-index: 5
+        opacity: 1
+        .img-c
+            opacity: .1
+
+    .img-right
+        position: absolute
+        transform: translate(30%)
+        z-index: 2
+        opacity: .8
+    .img-right:hover
+        z-index: 5
+        opacity: 1
+        
+    
+        
+       
+.Multipurpose
+   
+    background: linear-gradient(45deg, #211b19, #4e3427)
+    
+    padding: 25px 15% 25px 15%
+    color: white
+    display: flex
+    justify-content: space-between
+    header
+        flex-flow: column
+    span 
+        color: #c7b299
+    h6
+        color: #615855
+    @extend .for-button
+
+.Projects
+    
+    padding: 3% 15% 3% 15%
+    
+    .header
+        text-align: center
+        margin: 25px
+        color: #555555
+        h2
+            font-weight: 700
+    
+    figure
+        max-width: 30%
+        height: 278px
+        overflow: hidden
+        
+        padding: 0
+        margin-right: 1%
+        
+        
+
+    img
+        width: 100%
+        height: 200px
+        object-fit: cover
+        transition: all 0.5s ease        
+            
+            
+    .i 
+        height: 200px
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        display: flex
+        margin: 0 35%
+        visibility: hidden
+        
+    .fas
+            
+        margin: auto
+        font-size: 1.5rem
+        color: white
+        transition: color 0.5s ease
+    .fas:hover
+        color: #c7b299
+            
+        
+    
+    figcaption
+        transition: all 0.5s ease
+        padding: 15px
+        background-color: #fbfaf8
+        color: #c7b299
+        font-size: 18px
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            left: 25px
+            top: -30px
+            border: 15px solid transparent
+            border-bottom: 15px solid #fbfaf8
+            transition: all 0.5s ease
+    figure:hover
+        background-color: #372f2d
+        figcaption
+            background-color: #372f2d
+            color: white 
+            &::before  
+                border-bottom-color:  #372f2d
+        img
+            opacity: 0.5
+            background-color: #372f2d
+        .autor
+            color: #c7b299
+        .i
+            visibility: visible
+    .autor
+        color: #555555
+        font-size: 14px
+    .nav-pills
+        margin: 25px
+    .nav-item
+        margin: 15px
+        transition: all 1s ease
+        border: 1px solid #998675
+        border-radius: 7px
+        a
+            color: #998675
+            text-decoration: none
+    .nav-item:hover
+        background-color: #998675
+        border-radius: 7px
+        a
+            color: #fff
+    .active 
+        color: #fff  !important
+        background-color: #998675 !important
+        a
+            color: #fff  !important
+    @extend .for-button
+    
+.video
+    padding: 3% 0 3% 0
+    justify-content: center
+    .video-p    
+        height: 700px
+        display: block
+        margin: 0 auto
+        max-width: 1920px
+
+       
+        
+
+.mobile-devices
+    
+    padding-top: 5%
+    margin: 0 17% 0 17%
+    h2
+        font-weight: 700
+    img
+        width: 100%
+    align-items: center
+    p, ul
+        margin-top: 4%
+    li
+        list-style-image: url(media/img/04.png)
+        padding-left: 4%
+        margin-bottom: 1%
+ 
+   
+.stat
+    
+    font-size: 10px
+    background: linear-gradient(45deg, #211b19, #4e3427)
+    padding: 3% 20% 3% 20%
+    text-align: center
+    text-transform: uppercase
+    justify-content: space-between
+    
+    h2
+        color: white
+        font-size: 3rem
+    .far, h5, .fas
+        color: #c7b299
+    .far, .fas
+        font-size: 2.5rem
+    i, h2, h5
+        margin-bottom: 1.5rem
+    h5
+        font-size: 1rem
+    
+    .stat-indicator
+        width: 2rem
+        height: 0.1rem
+        background-color: white
+        margin: 0 auto
+
+.recent
+    
+    padding: 3% 15% 3% 15%
+    font-size: 10px
+    text-align: center
+    position: relative
+    color: #555555
+    .recent-head
+        margin: 3% auto
+        width: 75%
+    h2
+        font-weight: 700
+        
+    .carousel-indicators
+        top: 5%
+        
+    img
+        width: 100%
+        margin-bottom: 5%
+    figure
+        border: 1px solid #c7b299
+    figure:hover
+        transition: all 0.7s ease
+        background-color: #362f2d
+        h3
+            color: #c7b299
+        p
+            color: white
+        img
+            opacity: 0.5
+    .recent-item:hover
+        .recent-date
+            h3
+                background-color: #c7b299
+                border: 1px solid #c7b299
+            h5
+                background-color: #a48d72
+                border: 1px solid #a48d72
+        
+    figcaption
+        text-align: left
+        margin-left: 5%
+        margin-right: 5%
+        padding-bottom: 5%
+
+    h3
+        font-size: 1.4rem   
+        margin-bottom: 5%
+    p
+        font-size: 0.9rem
+        color: #8c8c8c
+    a
+        font-size: 1.1rem
+        color: #c7b299 !important
+        text-decoration: none
+        transition: color 1s ease
+        
+    .fas
+        font-size: 0.8rem 
+        margin-left: 2%  
+    a:hover
+        color: #363636 !important
+
+.recent-date
+
+    
+    position: absolute
+    z-index: 15
+    top: 5%
+    left: 10%
+    color: white
+    h3
+        transition: all 0.7s ease
+        background-color: #363636
+        font-size: 1.5rem
+        margin-bottom: 0
+        padding: 0.1rem 0.5rem 0.1rem 0.5rem
+        border: 1px solid #363636
+        border-top-left-radius: 3px
+        border-top-right-radius: 3px
+    h5
+        transition: all 0.7s ease
+        background-color: #252525
+        font-size: 0.7rem
+        margin-bottom: 0
+        padding: 0.3rem 0.5rem 0.3rem 0.5rem
+        border: 1px solid #252525
+        border-bottom-left-radius: 3px
+        border-bottom-right-radius: 3px
+    
+.recent-arrow
+    display: flex
+    justify-content: center
+    color: #555555
+    opacity: .7
+    
+    .fas
+        font-size: 1.5rem
+        transition: all 0.5s ease
+    .fas:hover
+        opacity: 1
+        color: #c7b299
+
+.sponsor-logos
+    background-image: url(media/img/footer-photo.png)
+    background-repeat:  no-repeat
+    background-size: 100%
+    justify-content: center
+    padding: 7% 10% 7% 10%
+    .col-auto
+        margin-right: 2%
+footer
+    
+    flex: 0 0 auto
+    h4
+        font-weight: 700    
+.footer-posts
+    justify-content: center
+    background-color: #191919
+    padding: 5% 10% 5% 10%
+    font-size: 10px
+    
+    
+    h4, h2
+        color: white
+        font-size: 1.8rem
+        
+    .post
+        
+        margin-bottom: 1.5rem
+        margin-top: 1.5rem
+    .post:hover
+        
+        p
+            color: #c7b299
+        h6
+            color: white
+    hr
+        background-color:  #363636
+    p
+        transition: color 1s ease
+        font-size: 1rem
+        color: #555555
+    h6
+        transition: color 1s ease
+        color: #363636
+        font-size: 0.8rem
+.footer-info
+    a
+        color: white
+        text-decoration: none
+        font-size: 0.8rem
+    .fas
+        font-size: 0.5rem
+        margin-left: 0.5rem
+    
+.widgets
+    margin-top: 1.5rem
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    grid-row-gap: 1rem
+    grid-column-gap: 1rem
+    img
+        width: 100%
+    
+    justify-items: center
+    .widget
+        transition: opacity 0.5s ease
+.widget:hover
+    opacity: 0.5
+
+.footer-end
+    justify-content: space-between
+    padding: 3% 5% 3% 10%
+    background-color: #111111
+    flex-wrap: nowrap
+    h6
+        color: #555555
+        margin-right: 1rem
+    span
+        color: #959595
+    a
+        color: #555555
+        text-decoration: none
+        transition: color 0.5s ease
+    a:hover
+        color: #c7b299
+
+
+
+.projects-grid
+    padding: 3% 15% 3% 15%
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: 10% 10% 1fr 1fr 10%
+    grid-column-gap: 20px
+    grid-row-gap: 20px
+    justify-content: center
+    justify-items: center
+    text-align: center
+    .projects-grid-header
+        color: #555555
+        grid-column: 1 / 4
+        h2
+            font-weight: 700
+    .projects-grid-sort
+        grid-column: 1 / 4
+    .projects-grid-button
+        grid-column: 1 / 4
+        
+    figure
+        width: 100%
+        height: 278px
+        overflow: hidden
+        padding: 0
+        margin-right: 1%
+    img
+        width: 100%
+        height: 200px
+        object-fit: cover
+        transition: all 0.5s ease 
+
+    .i 
+        height: 200px
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        display: flex
+        margin: 0 35%
+        visibility: hidden
+    .fas
+            
+        margin: auto
+        font-size: 1.5rem
+        color: white
+        transition: color 0.5s ease
+    .fas:hover
+        color: #c7b299
+            
+        
+    
+    figcaption
+        transition: all 0.5s ease
+        padding: 15px
+        background-color: #fbfaf8
+        color: #c7b299
+        font-size: 18px
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            left: 25px
+            top: -30px
+            border: 15px solid transparent
+            border-bottom: 15px solid #fbfaf8
+            transition: all 0.5s ease
+    figure:hover
+        background-color: #372f2d
+        figcaption
+            background-color: #372f2d
+            color: white 
+            &::before  
+                border-bottom-color:  #372f2d
+        img
+            opacity: 0.5
+            background-color: #372f2d
+        .autor
+            color: #c7b299
+        .i
+            visibility: visible
+    .autor
+        color: #555555
+        font-size: 14px
+    .nav-pills
+        margin: 25px
+    .nav-item
+        margin: 15px
+        transition: all 1s ease
+        border: 1px solid #998675
+        border-radius: 7px
+        a
+            color: #998675
+            text-decoration: none
+    .nav-item:hover
+        background-color: #998675
+        border-radius: 7px
+        a
+            color: #fff
+    .active 
+        color: #fff  !important
+        background-color: #998675 !important
+        a
+            color: #fff  !important
+    @extend .for-button
